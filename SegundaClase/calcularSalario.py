@@ -32,9 +32,9 @@ if (int(bruto) < 0):
 else:
 	iva = 0.21 * int(bruto)
 	neto = int(bruto) - iva
-	if (nombre == 'Juanjo' or nombre == 'juanjo'):
-		neto = int(bruto)
+	if (nombre == 'Juanjo'):
 		iva = 0
+		neto = int(bruto)
 	print("Tu nombre de usuario es: " + nombre)
 	print("Tu sueldo bruto es: ", bruto)
 	print("Tu sueldo final es: " + str(neto))

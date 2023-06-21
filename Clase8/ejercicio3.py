@@ -9,5 +9,5 @@ def despedir(nombre):
 # Función principal
 n = input("Dime tu nombre: ")
 saludar(n)
-
+despedir(n)
 

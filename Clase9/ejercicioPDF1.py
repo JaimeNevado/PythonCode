@@ -4,13 +4,13 @@ colores = ['amarillo', 'azul', 'verde', 'rojo']
 usuarios = [{'Nombre': 'Josep'}, {'Nombre': 'Claudio'}, {'Nombre': 'Isabel'}, {'Nombre': 'Shella'}]
 
 def agregar_color():
-    while True:
-        color = input("Ingresa un color para agregar a la lista (escribe 'salir' para finalizar): ")
-        if color.lower() == 'salir':
-            break
+    variable = True
+    while variable:
+        color = input("Ingresa un color para agregar a la lista: ")
         if color.lower() not in colores:
             colores.append(color.lower())
             print(f"El color '{color}' fue agregado a la lista.")
+            variable = False
         else:
             print(f"El color '{color}' ya existe en la lista.")
 

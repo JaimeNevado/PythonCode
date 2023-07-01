@@ -16,7 +16,6 @@ def rango():
 
 def conversion():
     letra = "c"
-    numero = 3
     try:
         numero = int(letra)
     except ValueError:
